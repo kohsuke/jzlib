@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.jcraft</groupId>
   <artifactId>jzlib</artifactId>
-  <version>1.1.3</version>
+  <version>1.1.2-kohsuke-1-SNAPSHOT</version>
   <name>JZlib</name>
   <description>JZlib is a re-implementation of zlib in pure Java</description>
   <url>http://www.jcraft.com/jzlib/</url>
@@ -35,4 +35,21 @@
       </plugin>
     </plugins>
   </build>
+
+  <distributionManagement>
+    <repository>
+      <id>maven.jenkins-ci.org</id>
+      <url>http://maven.jenkins-ci.org:8081/content/repositories/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>maven.jenkins-ci.org</id>
+      <url>http://maven.jenkins-ci.org:8081/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <scm>
+    <connection>scm:git:git://github.com/kohsuke/jzlib.git</connection>
+    <developerConnection>scm:git:git@github.com:kohsuke/jzlib.git</developerConnection>
+    <url>https://github.com/kohsuke/jzlib</url>
+  </scm>
 </project>
